@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="crime.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <div class="logo">
+            <img src="./images.jpg">
+            <h2>Crime management</h2>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="./home.html">home</a></li>
+                <li><a href="crime.html">Account</a></li>
+                <li><a href="account.html">crime</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="forms">
+        <div class="login">
+            <h1>Login</h1>
+            <input type="text" placeholder="username"><br><br>
+            <input type="password" placeholder="Password"><br><br>
+            <input type="submit" value="Login" id="login" onclick="alert('logged in')"><br><br>
+            <input type="submit" value="Sign-up" onclick="signupnow()">
+        </div>
+        <div class="signup">
+            <h1>Sign-up</h1>
+            <input type="text" placeholder="username"><br><br>
+            <input type="email" placeholder="email"><br><br>
+            <input type="password" placeholder="Password"><br><br>
+            <input type="submit" value="Sign-up" id="signup" onclick="alert('Account created')">
+        </div>
+    </div>
+    <script>
+        let signup = document.querySelector(".signup")
+        let button = document.getElementById("Signup")
+        function signupnow() {
+            signup.style.display = 'block'
+        }
+    </script>
+</body>
+
+</html>

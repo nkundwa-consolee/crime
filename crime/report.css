@@ -1,0 +1,37 @@
+.report_a_crime {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+.report_a_crime input {
+    padding: 15px;
+    width: 450px;
+    border: none;
+    border-radius: 10px;
+}
+
+#report {
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    transition: .3s ease-in;
+}
+
+#report:hover {
+    background: darkblue;
+    color: white;
+}
